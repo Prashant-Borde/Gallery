@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main_box{
+
+    background-image: url(photo.jpg);
+    height: 100vh;
+    background-size: cover;
+    /* width: 100vh; */
+}
+
+.btn_one{
+    font-size: large;
+    color: #fff;
+    position: absolute;
+    left: 10px;
+    top: 10px; 
+    font-size: 20px;
+
+}
+
+
+
+.sidebar_menu{
+    width: 30vh;
+}
+
+.sidebar_menu .logo a{
+    font-size: 30px;
+    text-decoration: none;
+    position: absolute;
+    left: 25px;
+
+}
+
+.sidebar_menu .logo{
+    border:2px solid #000;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5); 
+}
+
+.btn_two{
+    font-size: large;
+    color: aliceblue;
+    position: absolute;
+    left: 220px;  
+    top: 10px; 
+    font-size: 20px;
+
+}
+
+.menu{
+    height: 100vh;
+    width: 30vh;
+    background-color: rgb(185, 178, 170);
+    padding-top: 40px;
+
+}
+
+.menu ul li i{
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    color: #fff;
+}
+
+.menu ul li a{
+    color: #fff;
+    text-decoration:none ;
+    position: absolute;
+    left: 40px;
+}
+
+.menu ul li {
+    padding: 20px 10px ;
+}
+
+.social_media {
+    position: absolute; /* Allows positioning within the parent */
+    bottom: 8%; /* Align 20% from the bottom of the container */
+    width: 100%; /* Full width to center the icons */
+    display: flex;
+    justify-content:center; /* Center the icons horizontally */
+    padding-left: 30px;
+}
+
+
+.social_media ul a i {
+    color: #fff;
+    /* height: 24px;
+    width: 24px; */
+    font-size: 16px;
+    opacity: 0.5;
+    padding: 10px;
+    transition: opacity 0.3s ease;
+    justify-content: center;
+    /* line-height: 90%; */
+}
+
+ .social_media ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; /* This will distribute the icons evenly */
+    width: 50%; 
+}
+
+.social_media ul a i:hover {
+    opacity: 3; /* Add hover effect for better UX */
+    font-size: 26px;
+
+}
+
+
+ #check:checked ~ .sidebar_menu{
+    position: absolute;
+    left: -30vh;
+
+ }
+
+#check {
+    display: none;
+}
+
+/* 
+#check:checked ~ .btn_one i{
+    opacity: 0;
+} */
+
+.social_media{
+    color: #fff;
+    height: 24px;
+    width: 24px;
+    opacity: 0.5;
+}
+.sidebar_menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: left 0.3s ease;
+}
